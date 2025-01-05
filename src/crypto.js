@@ -28,9 +28,9 @@ app.get('/api/news', async (req, res) => {
     const response = await axios.get('https://newsapi.org/v2/everything', {
       params: {
         q: 'crypto',
-        from: '2024-11-27',
+        from: 'thirtyDaysAgo',
         sortBy: 'publishedAt',
-        apiKey: 'b4f0182f44494f48b527e0b5b7d2cc3f',
+        apiKey: '6ef823c8082e40e2881a228269e7ebb3',
       },
     });
 
